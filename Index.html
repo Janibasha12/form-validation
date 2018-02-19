@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Javascript Form Validations</title>
+</head>
+
+<body>
+    <h1>Javascript Form validation</h1>
+    <form id="newForm" onsubmit="return validateName();">
+        <div class="form-group">
+            <label for="username">Name:</label>
+            <input type="name" class="form-control" minlength="8" id="fullname" name="username" size="8" />
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="emaill" /></div>
+        <div class="form-group">
+            <label for="passid">Password:</label>
+            <input type="password" class="form-control" minlength="8" id="password" name="password" />
+        </div>
+        <div class="form-group">
+            <label for="gender">Sex:</label>
+            <select class="form-control" id="gender" name="gender">
+                <option selected="" value="Default">(Please select Gender)</option>
+                <option id="msex" value="msex">Male</option>
+                <option id="fsex" value="fsex">Female</option>
+        </select></div>
+        <div class="form-group">
+            <label for="country">Location:</label>
+            <select class="form-control" name="country" id="country">
+                        <option selected="" value="Default">(Please select a location)</option>
+                        <option value="DL">Delhi</option>
+                        <option value="Sf">San Francisco</option>
+                        <option value="NY">New York</option>
+                        <option value="LN">London</option>
+                </select></div><br>
+        <div class="form-group">
+            <button class="btn btn-primary" onclick="sValidate();" type="submit">Submit</button>
+        </div>
+
+
+
+    </form>
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
